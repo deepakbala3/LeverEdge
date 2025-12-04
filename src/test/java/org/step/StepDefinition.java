@@ -29,6 +29,8 @@ public class StepDefinition {
 		driver.findElement(By.id("gologin")).click();
 		Thread.sleep(5000);
 		
+		
+		//Java Script methods 
 		JavascriptExecutor js= (JavascriptExecutor) driver;
 		WebElement el=driver.findElement(By.className("Class"));
 		js.executeScript("arguments[0].setAttribute('value','Test')",el);
